@@ -529,3 +529,97 @@ footer {
     background: #005fa3;
     transform: translateY(-3px);
 }
+/* Mobile Version */
+@media (max-width: 768px) {
+
+    nav {
+        padding: 15px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav .logo {
+        font-size: 22px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    .home {
+        min-height: auto;
+        padding: 60px 20px;
+    }
+
+    .profile {
+        width: 140px;
+        height: 140px;
+    }
+
+    .home h1 {
+        font-size: 30px;
+    }
+
+    .home h2 {
+        font-size: 20px;
+    }
+
+    .home p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .button {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .certification-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
