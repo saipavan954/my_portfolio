@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
 * {
     margin: 0;
     padding: 0;
@@ -725,4 +730,38 @@ nav ul li a {
         font-size: 14px;
     }
 }
+.menu-toggle {
+    display: none;
+}
 
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 10px;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+}
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+}
